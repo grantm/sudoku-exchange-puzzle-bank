@@ -1,0 +1,32 @@
+# Sudoku Exchange "Puzzle Bank"
+
+This repository contains several hundred thousand Sudoku puzzles that were
+computer generated for use by the [Sudoku Exchange](https://sudokuexchange.com/)
+web site.
+
+The puzzles were generated using the
+[QQWing Sudoku](https://github.com/stephenostermiller/qqwing) software.
+The generated puzzles were then graded using
+[Sukaku Explainer](https://github.com/SudokuMonster/SukakuExplainer) and
+sorted into four 'buckets':
+
+| Filename       | Difficulty Rating |    |
+| -------------- | ----------------- | -- |
+| easy.txt       | < 1.5             |    |
+| medium.txt     | < 2.5             |    |
+| hard.txt       | < 5.0             |    |
+| diabolical.txt | ≥ 5.0             |    |
+
+Each text file has one puzzle per line, represented as three space-separated
+fields and a Unix-style line-ending, for a total of 100 bytes per record:
+
+     12 bytes of SHA1 hash of the digits string (for randomising order)
+     81 bytes of puzzle digits
+      4 bytes of rating (nn.n)
+      3 bytes of white-space (including the linefeed);
+    100 bytes total
+
+### License
+
+The data set is dedicated to the [public domain](LICENSE.txt).
+
