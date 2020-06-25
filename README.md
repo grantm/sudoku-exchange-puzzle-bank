@@ -10,12 +10,12 @@ The generated puzzles were then graded using
 [Sukaku Explainer](https://github.com/SudokuMonster/SukakuExplainer) and
 sorted into four 'buckets':
 
-| Filename       | Difficulty Rating |    |
-| -------------- | ----------------- | -- |
-| easy.txt       | < 1.5             |    |
-| medium.txt     | < 2.5             |    |
-| hard.txt       | < 5.0             |    |
-| diabolical.txt | ≥ 5.0             |    |
+| Filename       | Difficulty Rating |
+| -------------- | ----------------- |
+| easy.txt       | < 1.5             |
+| medium.txt     | < 2.5             |
+| hard.txt       | < 5.0             |
+| diabolical.txt | ≥ 5.0             |
 
 Each text file has one puzzle per line, represented as three space-separated
 fields and a Unix-style line-ending, for a total of 100 bytes per record:
